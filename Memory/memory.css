@@ -1,0 +1,41 @@
+:root{
+    --card-size: 15vmin;
+}
+
+.grid {
+    height: calc(var(--card-size) * 3);
+    width: calc(var(--card-size) * 5);
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+
+.card{
+    width: var(--card-size) ;
+    height: var(--card-size);
+    background-image: url('./images/back.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1vmin;
+    cursor: pointer;
+}
+
+.alien {
+    background-image: url('./images/alien.png');
+}
+.bug {
+    background-image: url('./images/bug.png');
+}
+.duck {
+    background-image: url('./images/duck.png');
+}
+.spaceship {
+    background-image: url('./images/spaceship.png');
+}
+.rocket {
+    background-image: url('./images/rocket.png');
+}
+.tiktac {
+    background-image: url('./images/tiktac.png');
+}

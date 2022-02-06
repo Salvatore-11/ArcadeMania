@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.4;
+}
+
+
+/* Sezione scelta colori e crazioni classi per utilizzare i vari colori */
+:root{
+    --main:#EA5C2B;
+    --sec:#EEEEEE;
+    --acc: #8946A6;
+}
+
+.bg-main{
+    background-color: var(--main);
+}
+
+.text-main{
+    color: var(--main);
+}
+
+.border-main{
+    border-color: 1px solid var(--main);
+}
+
+.bg-acc{
+    background-color: var(--acc);
+}
+
+.text-acc{
+    color: var(--acc);
+}
+
+.border-acc{
+    border-color: 1px solid var(--acc);
+}
+
+.bg-sec{
+    background-color: var(--sec);
+}
+
+.text-sec{
+    color: var(--sec);
+}
+
+.border-sec{
+    border-color: 1px solid var(--sec);
+}  /* Fine sezione colori*/
+
+
+/* Container della home */
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* link ai giochi */
+ .link-games{
+    color: var(--sec);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link-games:hover{
+    color: var(--acc);
+    transition: 0.1ms;
+}
+.scale:hover{
+    transform: scale(1.05);
+}
+
+
+li{
+     list-style-type: none;
+     margin-bottom: 20px;
+ }
+
+
+/* Immagini */
+ .img-fluid{
+     max-width: 70%;
+ }
+
+ .space{
+     margin-top:20px ;
+     margin-bottom: 20px;
+ }
+
+ /* Tris */
+ .back{
+     margin:40px;
+ }
+
+ /* Struttura base pagine dei giochi */
+
+ .board{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+     height: 70vh;
+     padding-bottom: 10vmin;
+ }
+
+ .game-area{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding:12px;
+     width: 100%;
+     height: 100%;
+
+ }
+
+ .game-data{
+    padding:12px;
+    width: 100%;
+}
+.game-description{
+    text-align: left;
+}
+
+ h1{
+     text-align: left;
+     font-size: 7vmin;
+     margin-bottom: 20px;
+ }
+
+ .game-description{
+    font-size: 3vmin;
+}
+.player-name{
+    font-size: 5vmin;
+    margin-top: 3vmin;
+}
+
+.d-none{
+    display: none !important;
+}
+
+
+/* Media query */
+
+@media screen and (max-width : 900px) {
+
+    .board{
+        flex-direction: column;
+    }    
+}
+
+
+/* Btn stile restart e add player */
+.btnadd{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vmin;
+    height: 3vmin;
+    border: 1px solid var(--sec);
+    background-color: var(--acc);
+}
+.btnadd:hover{
+    background-color: var(--sec);
+    border: 1px solid var(--acc);
+}
+.btnadd:active{
+    transform: scale(0.9);
+}
+
+/* Margin top */
+
+.mt-100{
+    margin-top: 3vmin;
+}
+
+/* resrtart font size button */
+
+.restart{
+    font-size: 2vmin;
+
+}

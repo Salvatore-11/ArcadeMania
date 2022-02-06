@@ -1,0 +1,82 @@
+:root{
+    --cell-size: 33%;
+    --cell-gutter: 10%;
+    --main:#EA5C2B;
+    --sec:#EEEEEE;
+    --acc: #8946A6;
+}
+
+/* Sezione scelta colori e crazioni classi per utilizzare i vari colori */
+.bg-main{
+    background-color: var(--main);
+}
+
+.text-main{
+    color: var(--main);
+}
+
+.border-main{
+    border-color: 1px solid var(--main);
+}
+
+.bg-acc{
+    background-color: var(--acc);
+}
+
+.text-acc{
+    color: var(--acc);
+}
+
+.border-acc{
+    border-color: 1px solid var(--acc);
+}
+
+.bg-sec{
+    background-color: var(--sec);
+}
+
+.text-sec{
+    color: var(--sec);
+}
+
+.border-sec{
+    border-color: 1px solid var(--sec);
+}  /* Fine sezione colori*/
+
+.grid{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+    width: calc(var(--cell-size) + var(--cell-gutter) * 3);
+    height: calc(var(--cell-size) + var(--cell-gutter) * 3);
+}
+
+.cell{
+    height: var(--cell-size);
+    width: var(--cell-size);
+
+    border: 1px solid white;
+    cursor: pointer;
+
+    font-size: 7vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-player{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vmin;
+    font-size: 2vmin;
+}
+input{
+    width: 35%;
+    height: 3vmin;
+    margin-top: 1vmin;
+}
+
